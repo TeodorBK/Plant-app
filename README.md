@@ -1,3 +1,4 @@
 # Plant-app
 
-denne appen er en quiz app, der man kan ta en quiz med fem spørsmål. denne appen kan kjøre på minst api-nivå 23, men det er ambefalt å kjøre den på api-nivå 31 siden det er dette appen er bygd etter.
+Denne React appen er en app for å dokumentere alle plantene man har. Måten den funker på er at man har en egen side der man kan legge inn planter man har og dokumentere det. Det er også mulig å fjerne eller redigere plantene hvis det trengs. Det er også mulig å kjøpe planter som da blir automatisk lagt inn i listen din med planter.
+Den bruker en database i Firebase som er bygget opp som en key, value database. Det er der all informasjonen er lagret og hentet ut fra.
