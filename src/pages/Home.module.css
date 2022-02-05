@@ -1,0 +1,41 @@
+.my_plants {
+  margin-top: 75px;
+  margin-left: 50px;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.outside {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(to left, var(--main), var(--main_contrast));
+  border-radius: 50rem;
+  animation: loader 1s infinite ease;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.inside {
+  width: 75%;
+  height: 75%;
+  border-radius: 50rem;
+  background-color: var(--bg);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

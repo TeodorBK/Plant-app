@@ -1,0 +1,18 @@
+:root {
+  --main: #56c596;
+  --main_dark: rgb(68, 151, 109);
+  --main_line: #7be495;
+  --main_hover: #329d9c;
+  --main_contrast: #205072;
+  --main_ligth: #cff4d2;
+  --clr_b: #000000;
+  --clr_w: #ffffff;
+  --bg: #fefffb;
+  --og: #00a46c;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg);
+  overflow-x: hidden;
+}

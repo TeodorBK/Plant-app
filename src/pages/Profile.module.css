@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.profileContainer {
+  border: 3px solid #b1b1b1;
+  border-radius: 1rem;
+}
+
+.profileImage {
+  height: 300px;
+  width: auto;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profileInfo h4 {
+  margin-top: -10px;
+}
+
+.followContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: auto;
+  position: relative;
+}
+
+.followContainer::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 3px;
+  background-color: rgba(000, 000, 000, 0.01);
+}
+
+.followContainer p {
+  margin-top: -20px;
+}
+
+.profilePlants {
+  background-color: #fefefe;
+  margin-top: 40px;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.amountPlantsBox {
+  margin-left: 60px;
+}
+
+.amountPlantsBox h1 {
+  font-size: 5rem;
+  margin-left: 20px;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.outside {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(to left, var(--main), var(--main_contrast));
+  border-radius: 50rem;
+  animation: loader 1s infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.inside {
+  width: 75%;
+  height: 75%;
+  border-radius: 50rem;
+  background-color: var(--bg);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
